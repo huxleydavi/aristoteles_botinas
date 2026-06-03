@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clientes - Aristóteles Botinas</title>
+
+    <link rel="stylesheet" href="css/vendor-shared.css">
+  <link rel="stylesheet" href="css/pages/clientes.css">
+
+</head>
+<body>
+
+<header class="top-header">
+    <h2>Área do Vendedor</h2>
+
+    <div class="nav-header">
+        <button onclick="location.href='vendedores.html'">🏠 Painel</button>
+        <button onclick="location.href='clientes.html'">👥 Clientes</button>
+        <button onclick="location.href='novo-pedido.html'">🛒 Pedido</button>
+        <button onclick="location.href='historico-pedidos.html'">📄 Histórico</button>
+        <button onclick="location.href='rota.html'">📍 Rota</button>
+    </div>
+</header>
+  <main>
+    <section class="toolbar-card">
+      <div class="page-title"><h1>Clientes</h1><p>Busque, cadastre e acompanhe seus clientes com rapidez.</p></div>
+      <div class="search-box"><span>🔍</span><input id="buscaCliente" type="text" placeholder="Buscar por nome, cidade, telefone ou CNPJ"></div>
+      <button class="btn-novo-cliente" onclick="location.href='novo-cliente.html'">
+      + Novo Cliente
+      </button>
+    </section>
+    <section class="client-list" id="listaClientes"></section>
+  </main>
+  <nav class="bottom-nav">
+    <a href="vendedores.html" class="nav-item"><span class="nav-icon">🏠</span><span>Painel</span></a>
+    <a href="#" class="nav-item active"><span class="nav-icon">👥</span><span>Clientes</span></a>
+    <a href="novo-pedido.html" class="nav-item"><span class="nav-icon">🛒</span><span>Pedido</span></a>
+    <a href="historico-pedidos.html" class="nav-item"><span class="nav-icon">📄</span><span>Histórico</span></a>
+    <a href="rota.html" class="nav-item"><span class="nav-icon">🗺️</span><span>Rota</span></a>
+  </nav>
+  <script src="js/vendor-shared.js"></script>
+  <script src="js/vendedor-db.js"></script>
+
+  
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novo Cliente - Aristóteles Botinas</title>
+
+    <link rel="stylesheet" href="css/vendor-shared.css">
+  <link rel="stylesheet" href="css/pages/novo-cliente.css">
+
+</head>
+<body>
+
+<header class="top-header">
+    <h2>Área do Vendedor</h2>
+
+    <div class="nav-header">
+        <button onclick="location.href='vendedores.html'">🏠 Painel</button>
+        <button onclick="location.href='clientes.html'">👥 Clientes</button>
+        <button onclick="location.href='novo-pedido.html'">🛒 Pedido</button>
+        <button onclick="location.href='historico-pedidos.html'">📄 Histórico</button>
+        <button onclick="location.href='rota.html'">📍 Rota</button>
+    </div>
+</header>
+  <main>
+    <section class="page-head"><h1>Novo Cliente</h1><p>Os dados serão salvos automaticamente no banco local do navegador.</p></section>
+    <section class="form-card">
+      <div class="form-section"><h2>Dados principais</h2><div class="form-grid">
+        <div class="field"><label>Nome da loja<span class="required">*</span></label><input type="text" placeholder="Ex: Loja do João"></div>
+        <div class="field field-full"><label>Apelido da loja</label><input type="text" placeholder="Ex: João Calçados"></div>
+        <div class="field"><label>CNPJ</label><input type="text" placeholder="00.000.000/0000-00"></div>
+        <div class="field"><label>Telefone<span class="required">*</span></label><input type="text" placeholder="(00) 00000-0000"></div>
+        <div class="field field-full"><label>Nome do responsável</label><input type="text" placeholder="Ex: João da Silva"></div>
+      </div></div>
+      <div class="form-section"><h2>Endereço</h2><div class="form-grid">
+        <div class="field"><label>CEP</label><input type="text" placeholder="00000-000"><small>Você pode preencher depois se preferir.</small></div>
+        <div class="field"><label>Cidade<span class="required">*</span></label><input type="text" placeholder="Ex: Inhapim"></div>
+        <div class="field field-full"><label>Endereço</label><input type="text" placeholder="Rua, avenida, praça..."></div>
+        <div class="field-row field-full"><div class="field"><label>Número</label><input type="text" placeholder="Ex: 120"></div><div class="field"><label>Bairro</label><input type="text" placeholder="Ex: Centro"></div></div>
+        <div class="field field-full"><label>Complemento</label><input type="text" placeholder="Ex: Sala, fundos, próximo à igreja..."></div>
+      </div></div>
+      <div class="form-section"><h2>Observações</h2><div class="form-grid">
+        <div class="field field-full"><label>Observações internas</label><textarea placeholder="Ex: prefere atendimento à tarde, compra mais botina preta, paga no boleto..."></textarea></div>
+        <div class="field"><label>Status</label><select><option>Ativo</option><option>Em prospecção</option><option>Inativo</option></select></div>
+        <div class="field"><label>Região</label><input type="text" placeholder="Ex: Inhapim / Caratinga"></div>
+      </div></div>
+    </section>
+  </main>
+  <div class="actions"><button class="btn btn-outline" onclick="window.location.href='clientes.html'">Cancelar</button><button class="btn btn-solid" id="salvarClienteBtn">Salvar Cliente</button></div>
+  <script src="js/vendor-shared.js"></script>
+  <script src="js/vendedor-db.js"></script>
+
+  
+</body>
+</html>

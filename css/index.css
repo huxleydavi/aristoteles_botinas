@@ -1,0 +1,163 @@
+:root{
+    --verde:#254e39;
+    --vermelho:#b22222;
+}
+
+/* RESET */
+body{
+    margin:0;
+    font-family:Arial;
+    background:#0b0b0b;
+    color:white;
+    overflow:hidden;
+}
+
+/* TRANSIÇÃO GLOBAL */
+#transition{
+    position:fixed;
+    inset:0;
+    background:#0b0b0b;
+    z-index:9999;
+    transform:translateY(100%);
+    transition:0.7s cubic-bezier(.77,0,.18,1);
+}
+
+/* LOADING */
+#loading{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background:#0b0b0b;
+    z-index:9998;
+}
+
+.logo{
+    font-weight:bold;
+    letter-spacing:3px;
+    opacity:0;
+    animation:fade 1s forwards;
+}
+
+.loader{
+    width:120px;
+    height:2px;
+    background:#222;
+    margin-top:15px;
+    overflow:hidden;
+}
+
+.loader span{
+    display:block;
+    height:100%;
+    width:0%;
+    background:var(--verde);
+    animation:load 2s forwards;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    opacity:0;
+    transform:translateY(50px);
+    transition:1.2s cubic-bezier(.19,1,.22,1);
+}
+
+.hero h1{
+    font-size:52px;
+    margin:0;
+}
+
+.hero p{
+    color:#aaa;
+    margin-top:10px;
+}
+
+/* BOTÃO */
+.btn{
+    margin-top:40px;
+    padding:18px 45px;
+    border:none;
+    border-radius:50px;
+    background:linear-gradient(135deg,#254e39,#1b3627);
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.25s;
+}
+
+/* efeito pressão real */
+.btn:active{
+    transform:scale(0.93);
+}
+
+/* FUNDO */
+.bg{
+    position: fixed;
+    inset: 0;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("../img/bg/1.jpg") center/cover no-repeat;
+    
+    background-position: center;
+
+    filter: blur(2px) brightness(0.9) contrast(1.1);
+    transform: scale(1.05);
+
+    transition: 
+        opacity 1.2s ease,
+        transform 6s ease;
+
+    z-index: -1;
+}
+
+/* FRASE */
+.tag{
+    position:absolute;
+    bottom:20px;
+    width:100%;
+    text-align:center;
+    color:#777;
+    letter-spacing:2px;
+}
+
+/* ATIVO */
+.show{
+    opacity:1 !important;
+    transform:translateY(0) !important;
+}
+
+/* ANIMAÇÕES */
+@keyframes load{to{width:100%;}}
+@keyframes fade{to{opacity:1;}}
+
+@media(max-width:768px){
+    .hero h1{font-size:34px;}
+}
+
+.btn-vendedor{
+    margin-top:15px;
+    padding:12px 28px;
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:50px;
+    background:transparent;
+    color:#aaa;
+    font-size:12px;
+    letter-spacing:2px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-vendedor:hover{
+    background:rgba(255,255,255,0.05);
+    color:white;
+    transform:scale(1.03);
+}

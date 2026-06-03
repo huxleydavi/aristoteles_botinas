@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho - Aristóteles Botinas</title>
+    <link rel="stylesheet" href="css/vendor-shared.css">
+  <link rel="stylesheet" href="css/pages/carrinho-vendedores.css">
+
+</head>
+<body>
+<header class="top-header">
+    <h2>Área do Vendedor</h2>
+
+    <div class="nav-header">
+        <button onclick="location.href='vendedores.html'">🏠 Painel</button>
+        <button onclick="location.href='clientes.html'">👥 Clientes</button>
+        <button onclick="location.href='novo-pedido.html'">🛒 Pedido</button>
+        <button onclick="location.href='historico-pedidos.html'">📄 Histórico</button>
+        <button onclick="location.href='rota.html'">📍 Rota</button>
+    </div>
+</header>
+
+  <main>
+    <section class="cart-list" id="carrinhoLista"></section>
+  </main>
+
+  <div class="summary">
+    <div class="summary-wrap">
+      <div class="summary-top" id="carrinhoTotais">
+        <div>
+          <small>Total do pedido</small>
+          <strong>R$ 0,00</strong>
+        </div>
+        <span>0 pares no total</span>
+      </div>
+
+      <div class="summary-actions">
+        <button class="btn-outline" onclick="location.href='novo-pedido.html'">Editar pedido</button>
+        <button class="btn-outline" onclick="location.href='novo-pedido.html'">Adicionar mais</button>
+        <button class="btn-solid" onclick="location.href='finalizacao-pedido.html'">Finalizar Pedido</button>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <script src="js/vendor-shared.js"></script>
+  <script src="js/pages/carrinho-vendedores.js"></script>
+</body>
+</html>

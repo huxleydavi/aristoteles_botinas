@@ -1,0 +1,20 @@
+{
+    "name": "Aristóteles Botinas",
+    "short_name": "Botinas",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#254e39",
+    "theme_color": "#254e39",
+    "icons": [
+      {
+        "src": "img/icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "img/logo.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }

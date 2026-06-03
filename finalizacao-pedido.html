@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finalização do Pedido - Aristóteles Botinas</title>
+
+    <link rel="stylesheet" href="css/vendor-shared.css">
+  <link rel="stylesheet" href="css/pages/finalizacao-pedido.css">
+
+</head>
+<body>
+
+<header class="top-header">
+    <h2>Área do Vendedor</h2>
+
+    <div class="nav-header">
+        <button onclick="location.href='vendedores.html'">🏠 Painel</button>
+        <button onclick="location.href='clientes.html'">👥 Clientes</button>
+        <button onclick="location.href='novo-pedido.html'">🛒 Pedido</button>
+        <button onclick="location.href='historico-pedidos.html'">📄 Histórico</button>
+        <button onclick="location.href='rota.html'">📍 Rota</button>
+    </div>
+</header>
+  <main>
+    <section class="hero"><h1>Finalização do Pedido</h1><p>Confirme os dados do cliente, revise os itens e finalize o pedido com segurança.</p></section>
+    <div id="finalizacaoRoot"></div>
+  </main>
+  <div class="actions-fixed"><div class="actions-wrap"><div class="total-line" id="finalizacaoTotais"><div><small>Total geral</small><strong>R$ 0,00</strong></div><span>0 pares no total</span></div><div class="actions-grid">
+    <div class="final-actions">
+        <button class="btn-outline" id="btnVoltarCarrinho" onclick="location.href='carrinho-vendedores.html'">
+            Voltar ao carrinho
+        </button>
+
+        <button class="btn-solid" id="confirmarPedidoBtn" onclick="finalizarPedido()">
+            Confirmar Pedido
+        </button>
+    </div>
+</div></div></div>
+  <script src="js/vendor-shared.js"></script>
+  <script src="js/vendedor-db.js"></script>
+
+  
+</body>
+</html>

@@ -1,0 +1,316 @@
+:root{
+      --verde:#254e39;
+      --verde-escuro:#1d3d2d;
+      --vermelho:#b22222;
+      --fundo:#f5f5f5;
+      --card:#ffffff;
+      --texto:#1f1f1f;
+      --sub:#6b7280;
+      --borda:#e8e8e8;
+      --sombra:0 8px 24px rgba(0,0,0,0.08);
+      --radius:16px;
+    }
+
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    body{
+      font-family:Arial, Helvetica, sans-serif;
+      background:var(--fundo);
+      color:var(--texto);
+      min-height:100vh;
+    }
+
+.top-header{
+    background: linear-gradient(135deg, #254e39, #1d3d2d);
+    color: #fff;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 14px rgba(0,0,0,.12);
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.top-header h2,
+.top-header h1{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: .2px;
+}
+
+.top-header .nav-header{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.top-header .nav-header button{
+    background: rgba(255,255,255,.12);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,.14);
+    padding: 9px 12px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.top-header .nav-header button:hover{
+    background: rgba(255,255,255,.2);
+    transform: translateY(-1px);
+}
+
+.top-header .nav-header button.ativo{
+    background: #fff;
+    color: #254e39;
+    border-color: #fff;
+}
+
+    main{
+      max-width:1100px;
+      margin:0 auto;
+      padding:16px;
+      padding-bottom:90px;
+    }
+
+    .page-top{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      margin-bottom:16px;
+    }
+
+    .page-title h1{
+      font-size:24px;
+      color:var(--verde);
+      margin-bottom:4px;
+    }
+
+    .page-title p{
+      font-size:14px;
+      color:var(--sub);
+    }
+
+    .search-box{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      background:#fff;
+      border:1px solid var(--borda);
+      border-radius:16px;
+      padding:12px 14px;
+      box-shadow:var(--sombra);
+    }
+
+    .search-box input{
+      flex:1;
+      border:none;
+      outline:none;
+      font-size:14px;
+      background:transparent;
+      color:var(--texto);
+    }
+
+    .add-btn{
+      border:none;
+      background:linear-gradient(135deg,var(--verde),var(--verde-escuro));
+      color:#fff;
+      width:100%;
+      border-radius:14px;
+      padding:14px 16px;
+      font-size:15px;
+      font-weight:800;
+      cursor:pointer;
+      box-shadow:var(--sombra);
+    }
+
+    .client-list{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+
+    .client-card{
+      background:var(--card);
+      border:1px solid var(--borda);
+      border-radius:18px;
+      padding:16px;
+      box-shadow:var(--sombra);
+    }
+
+    .client-head{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:10px;
+    }
+
+    .client-main h2{
+      font-size:16px;
+      color:var(--texto);
+      margin-bottom:4px;
+    }
+
+    .client-main p{
+      font-size:13px;
+      color:var(--sub);
+      line-height:1.45;
+    }
+
+    .tag{
+      background:#eef6f1;
+      color:var(--verde);
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:700;
+      white-space:nowrap;
+    }
+
+    .client-meta{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:8px;
+      margin:12px 0;
+    }
+
+    .meta-box{
+      background:#fafafa;
+      border:1px solid #efefef;
+      border-radius:12px;
+      padding:10px;
+    }
+
+    .meta-box span{
+      display:block;
+      font-size:11px;
+      color:var(--sub);
+      margin-bottom:4px;
+    }
+
+    .meta-box strong{
+      font-size:13px;
+      color:var(--texto);
+    }
+
+    .client-actions{
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr;
+      gap:10px;
+      margin-top:10px;
+    }
+
+    .client-actions button{
+      border:none;
+      border-radius:12px;
+      padding:12px 10px;
+      font-size:13px;
+      font-weight:700;
+      cursor:pointer;
+    }
+
+    .btn-outline{
+      background:#f7f7f7;
+      color:var(--verde);
+      border:1px solid #e6e6e6;
+    }
+
+    .btn-solid{
+      background:var(--verde);
+      color:#fff;
+    }
+
+    .btn-alert{
+      background:#fff3f3;
+      color:var(--vermelho);
+      border:1px solid #ffdcdc;
+    }
+
+    .empty-state{
+      margin-top:18px;
+      background:#fff;
+      border:1px dashed #d9d9d9;
+      border-radius:18px;
+      padding:22px;
+      text-align:center;
+      color:var(--sub);
+      box-shadow:var(--sombra);
+    }
+
+    nav.bottom-nav{
+      position:fixed;
+      left:0;
+      right:0;
+      bottom:0;
+      background:#fff;
+      border-top:1px solid rgba(0,0,0,0.06);
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      padding:8px 6px calc(8px + env(safe-area-inset-bottom));
+      z-index:60;
+    }
+
+    .nav-item{
+      text-decoration:none;
+      color:var(--sub);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:4px;
+      font-size:11px;
+      font-weight:700;
+      padding:6px 4px;
+    }
+
+    .nav-item.active{
+      color:var(--verde);
+    }
+
+    .nav-item .nav-icon{
+      font-size:18px;
+    }
+
+    .btn-novo-cliente{
+    background: linear-gradient(135deg, #254e39, #1d3d2d);
+    color: #fff;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 6px 14px rgba(37,78,57,.22);
+    transition: .2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-novo-cliente:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(37,78,57,.28);
+}
+
+    @media (min-width:768px){
+      .page-top{
+        display:grid;
+        grid-template-columns:1fr 1.2fr 220px;
+        align-items:end;
+      }
+
+      .client-list{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:14px;
+      }
+    }

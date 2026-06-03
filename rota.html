@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rota do Dia - Aristóteles Botinas</title>
+
+    <link rel="stylesheet" href="css/vendor-shared.css">
+  <link rel="stylesheet" href="css/pages/rota.css">
+
+</head>
+<body>
+
+<header class="top-header">
+    <h2>Área do Vendedor</h2>
+
+    <div class="nav-header">
+        <button onclick="location.href='vendedores.html'">🏠 Painel</button>
+        <button onclick="location.href='clientes.html'">👥 Clientes</button>
+        <button onclick="location.href='novo-pedido.html'">🛒 Pedido</button>
+        <button onclick="location.href='historico-pedidos.html'">📄 Histórico</button>
+        <button onclick="location.href='rota.html'">📍 Rota</button>
+    </div>
+</header>
+  <main>
+    <section class="hero"><h1>Rota do Dia</h1><p>Clientes marcados para visita. Você pode montar a rota a partir da ficha do cliente.</p></section>
+    <section class="route-list" id="rotaLista"></section>
+  </main>
+  <nav class="bottom-nav">
+    <a href="vendedores.html" class="nav-item"><span class="nav-icon">🏠</span><span>Painel</span></a>
+    <a href="clientes.html" class="nav-item"><span class="nav-icon">👥</span><span>Clientes</span></a>
+    <a href="novo-pedido.html" class="nav-item"><span class="nav-icon">🛒</span><span>Pedido</span></a>
+    <a href="historico-pedidos.html" class="nav-item"><span class="nav-icon">📄</span><span>Histórico</span></a>
+    <a href="#" class="nav-item active"><span class="nav-icon">🗺️</span><span>Rota</span></a>
+  </nav>
+  <script src="js/vendor-shared.js"></script>
+  <script src="js/vendedor-db.js"></script>
+
+  
+</body>
+</html>

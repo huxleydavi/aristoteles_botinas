@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Histórico de Pedidos - Aristóteles Botinas</title>
+    <link rel="stylesheet" href="css/vendor-shared.css">
+  <link rel="stylesheet" href="css/pages/historico-pedidos.css">
+
+</head>
+<body>
+<header class="top-header">
+    <h2>Área do Vendedor</h2>
+
+    <div class="nav-header">
+        <button onclick="location.href='vendedores.html'">🏠 Painel</button>
+        <button onclick="location.href='clientes.html'">👥 Clientes</button>
+        <button onclick="location.href='novo-pedido.html'">🛒 Pedido</button>
+        <button onclick="location.href='historico-pedidos.html'">📄 Histórico</button>
+        <button onclick="location.href='rota.html'">📍 Rota</button>
+    </div>
+</header>
+
+  <main>
+    <section class="hero">
+      <h1>Histórico de Pedidos<br>realizados</h1>
+      <p>Consulte pedidos anteriores, veja os detalhes completos, baixe o PDF novamente ou repita um pedido.</p>
+    </section>
+
+    <div class="search-box">
+      <span>🔍</span>
+      <input id="buscaHistorico" type="text" placeholder="Buscar por número do pedido, cliente, cidade ou data">
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="todos">Todos</button>
+      <button class="filter-btn" data-filter="hoje">Hoje</button>
+      <button class="filter-btn" data-filter="semana">Esta semana</button>
+      <button class="filter-btn" data-filter="mes">Este mês</button>
+      <button class="filter-btn" data-filter="maior">Maior valor</button>
+    </div>
+
+    <section class="orders-grid" id="historicoLista"></section>
+  </main>
+
+  <div class="modal" id="detalheModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="fecharDetalhes()">X</button>
+      <div id="detalheConteudo"></div>
+    </div>
+  </div>
+
+  
+
+<footer class="footer-nav">
+  <button onclick="location.href='vendedores.html'">🏠<span>Painel</span></button>
+  <button onclick="location.href='clientes.html'">👥<span>Clientes</span></button>
+  <button onclick="location.href='novo-pedido.html'">🛒<span>Pedido</span></button>
+  <button onclick="location.href='historico-pedidos.html'" class="active">📄<span>Histórico</span></button>
+  <button onclick="location.href='rota.html'">🗺️<span>Rota</span></button>
+</footer>
+
+  <script src="js/vendor-shared.js"></script>
+  <script src="js/pages/historico-pedidos.js"></script>
+</body>
+</html>

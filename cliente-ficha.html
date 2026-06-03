@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha do Cliente - Aristóteles Botinas</title>
+    <link rel="stylesheet" href="css/vendor-shared.css">
+  <link rel="stylesheet" href="css/pages/cliente-ficha.css">
+
+</head>
+<body>
+<header class="top-header">
+    <h2>Área do Vendedor</h2>
+
+    <div class="nav-header">
+        <button onclick="location.href='vendedores.html'">🏠 Painel</button>
+        <button onclick="location.href='clientes.html'">👥 Clientes</button>
+        <button onclick="location.href='novo-pedido.html'">🛒 Pedido</button>
+        <button onclick="location.href='historico-pedidos.html'">📄 Histórico</button>
+        <button onclick="location.href='rota.html'">📍 Rota</button>
+    </div>
+</header>
+  <main id="clienteFichaRoot"></main>
+
+  <div class="modal-overlay" id="editarClienteModal">
+    <div class="modal-box">
+      <div class="modal-top"><h3>Editar cliente</h3><button class="close-x" onclick="fecharEditarCliente()">✕</button></div>
+      <div class="form-grid">
+        <div class="field full"><label>Razão social</label><input id="edit_nome"></div>
+        <div class="field"><label>Apelido</label><input id="edit_apelido"></div>
+        <div class="field"><label>Responsável</label><input id="edit_responsavel"></div>
+        <div class="field"><label>Telefone</label><input id="edit_telefone"></div>
+        <div class="field"><label>CNPJ</label><input id="edit_cnpj"></div>
+        <div class="field"><label>Região</label><input id="edit_regiao"></div>
+        <div class="field full"><label>Endereço</label><input id="edit_endereco"></div>
+        <div class="field"><label>Número</label><input id="edit_numero"></div>
+        <div class="field"><label>Bairro</label><input id="edit_bairro"></div>
+        <div class="field"><label>Cidade</label><input id="edit_cidade"></div>
+        <div class="field"><label>Status</label><input id="edit_status"></div>
+        <div class="field full"><label>Observações</label><textarea id="edit_obs"></textarea></div>
+      </div>
+      <div class="modal-actions">
+        <button class="btn-main" onclick="salvarClienteEditado()">Salvar alterações</button>
+        <button class="btn-danger" onclick="excluirClienteAtual()">Excluir cliente</button>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <script src="js/vendor-shared.js"></script>
+  <script src="js/pages/cliente-ficha.js"></script>
+</body>
+</html>
